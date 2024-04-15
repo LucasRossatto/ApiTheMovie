@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+    --azulEscuroBG: #0D1117;
+    --RoxoBtn: #9146ff;
+}
+
+/*--------------------------------------------*/ 
+/*--------------------------------------------*/ 
+/*--------------------------------------------*/ 
+/* NAV-BAR*/ 
+
+body{
+    background-color: #0D1117;
+}
+
+nav {
+    background-color: black;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#navBtn img {
+    width: 42px;
+    cursor: pointer;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    gap: 15px;
+    transition: color 0.3s ease;
+    
+}
+
+.activePrincipal {
+    position: relative;
+}
+
+.activePrincipal  a {
+    display: inline-block;
+    position: relative;
+}
+
+.activePrincipal::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--RoxoBtn);
+}
+
+
+.activeSub {
+    position: relative;
+}
+
+.activeSub a {
+    display: inline-block;
+    position: relative;
+}
+
+.activeSub::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--RoxoBtn);
+    transition: width 0.3s ease;
+}
+
+.activeSub:hover::before {
+    width: 100%;
+}*
+
+#profile {
+    width: 48px; /* Define a largura igual à altura */
+    height: 48px;
+    border-radius: 50%; /* Torna a imagem redonda */
+}
+
+#profile:hover {
+    cursor: pointer;
+}
+
+/* Estilos para o menu de perfil */
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 60px; /* Ajuste a posição conforme necessário */
+    right: 10px; /* Ajuste a posição conforme necessário */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+}
+
+.profile-menu a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+/*--------------------------------------------*/ 
+/*--------------------------------------------*/ 
+/*--------------------------------------------*/ 
+/*CARROSEL*/
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.slide-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slide-list {
+    display: flex;
+}
+
+.slide-item {
+    cursor: grab;
+    flex-shrink: 0;
+    padding: 0 10px;
+    width: 90vw;
+}
+
+.slide-content {
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: #070707 0px 12px 12px;
+    position: relative;
+}
+
+.slide-image {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.slide-description {
+    border-radius: 10px;
+    background: linear-gradient(to top, #000, transparent);
+    color: #fff;
+    position: absolute;
+    padding: 30px;
+    bottom: 0;
+    width: 100%;
+}
+
+.slide-description h3 {
+    font-family: 'Koulen', sans-serif;
+    font-size: 48px;
+    position: relative;
+    top: 16px
+}
+
+.slide-description p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+}
+
+.slide-nav-button {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 36px;
+    position: absolute;
+    z-index: 1;
+}
+
+.slide-nav-previous {
+    left: 20px;
+}
+
+.slide-nav-next {
+    right: 20px;
+}
+
+.slide-controls {
+    margin: 30px auto 0;
+}
+
+.slide-control-button {
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+    font-size: 18px;
+    margin: 0 5px;
+    border-style: none;
+}
+
+.slide-control-button.active {
+    color: var(--RoxoBtn);
+}
+
+@media screen and (max-width: 768px) {
+    .slide-description {
+        padding: 10px;
+    }
+    
+    .slide-description h3 {
+        font-size: 24px;
+        top: 0;
+    }
+
+    .slide-description p {
+        display: none;
+    }
+
+    .slide-nav-button {
+        margin-top: -20px;
+        font-size: 28px;
+    }
+    
+    .slide-nav-previous {
+        left: 10px;
+    }
+    
+    .slide-nav-next {
+        right: 10px;
+    }
+
+    .slide-controls {
+        margin: 15px auto 0;
+    }
+
+    .slide-control-button {
+        font-size: 14px;
+    }
+}
+

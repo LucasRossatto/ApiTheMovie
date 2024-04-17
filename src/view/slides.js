@@ -16,7 +16,7 @@ const state = {
     movement: 0,
     currentSlideIndex: 0,
     autoPlay: true,
-    timeInterval: 0
+    timeInterval: 3
 }
 
 function translateSlide({ position }) {
@@ -207,7 +207,7 @@ function setListeners() {
     })
 }
 
-function initSlider({startAtIndex = 0, autoPlay = true, timeInterval = 3000}) {
+function initSlider({startAtIndex = 0, autoPlay = true, timeInterval = 5000}) {
     state.autoPlay = autoPlay
     state.timeInterval = timeInterval
     createControlButtons()

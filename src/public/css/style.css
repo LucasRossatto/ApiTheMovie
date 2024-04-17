@@ -18,6 +18,8 @@
 /*--------------------------------------------*/ 
 /* NAV-BAR*/ 
 
+  
+
 body{
     background-color: #0D1117;
 }
@@ -69,7 +71,7 @@ nav li a {
     bottom: -5px;
     left: 0;
     width: 100%;
-    height: 1px;
+    height: 3px;
     background-color: var(--RoxoBtn);
 }
 
@@ -89,7 +91,7 @@ nav li a {
     bottom: -5px;
     left: 0;
     width: 0;
-    height: 1px;
+    height: 3px;
     background-color: var(--RoxoBtn);
     transition: width 0.3s ease;
 }
@@ -150,6 +152,7 @@ nav li a {
     display: flex;
     align-items: center;
     height: 100%;
+    margin-bottom: 30px;
 }
 
 .slide-wrapper {
@@ -239,6 +242,7 @@ nav li a {
     color: var(--RoxoBtn);
 }
 
+
 @media screen and (max-width: 768px) {
     .slide-description {
         padding: 10px;
@@ -275,7 +279,8 @@ nav li a {
     }
 }
 .article-wrapper {
-    width: 250px;
+    width: calc(33.33% - 20px); /* Ajuste a largura dos cards conforme necessário */
+    margin-bottom: 20px; /* Adiciona margem inferior entre os cards */
     -webkit-transition: 0.15s all ease-in-out;
     transition: 0.15s all ease-in-out;
     border-radius: 10px;
@@ -283,7 +288,7 @@ nav li a {
     border: 4px solid transparent;
     cursor: pointer;
     background-color: white;
-  }
+}
   .rounded-lg {
    /* class tailwind */
     border-radius: 10px;
@@ -296,6 +301,9 @@ nav li a {
     background-color: #9146ff;
   }
   
+
+
+  /*card*/
   .project-info {
     padding-top: 20px;
     padding: 10px;
@@ -351,19 +359,46 @@ nav li a {
   }
   
   .container-project {
-    width: 100%;
-    height: 300px;
+    width: 207px;
+    height: 280px;
     background: black;
   }
   .container-project img {
       width: 100%;
       height: 100%;
+  }
 
-  }
   .container {
-    margin-top: 50px;
     display: flex;
-    gap: 40px;
-    height: 60px;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha quando não couberem mais na largura */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    gap: 20px; /* Espaçamento entre os elementos */
+    max-width: 100%; /* Garante que o container não ultrapasse a largura máxima da tela */
+    margin: 0 auto; /* Centraliza o container na tela */
+    padding: 0 20px; /* Adiciona um espaçamento interno para evitar que os elementos encostem nas bordas */
+}
+
+/* Estilos para cada elemento do container (por exemplo, .article-wrapper) podem ser ajustados conforme necessário */
+.article-wrapper {
+    width: 225px; /* Largura dos elementos */
+    -webkit-transition: 0.15s all ease-in-out;
+    transition: 0.15s all ease-in-out;
+    border-radius: 10px;
+    padding: 5px;
+    border: 4px solid transparent;
+    cursor: pointer;
+    background-color: white;
+}
+.types {
+    gap: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: flex-start;
   }
-  
+
+.populares h1{
+    margin-left: 75px ;
+    padding: 25px;
+    font-size: 25px;
+}

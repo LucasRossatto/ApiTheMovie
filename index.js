@@ -34,7 +34,6 @@ function cards(dataArray) {
                 <div class="types">
                 <span  class="project-type"><img width="11" height="11" src="https://img.icons8.com/ios-glyphs/30/a560f7/star--v1.png" alt="star--v1"/>${movie.vote_average}</span>
                 <span class="project-type">${movie.release_date}</span>
-                
                 </div>
             </div>
         `;

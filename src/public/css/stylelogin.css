@@ -10,13 +10,14 @@
 }
 
 body {
-  background: url("https://xxboxnews.blob.core.windows.net/prod/sites/2/2023/05/Background-size1920x1080-4e1694a6-75aa-4c36-9d4d-7fb6a3102005-bc5318781aad7f5c8520.png");
+  background-image: url(/src/public/image/desktop-wallpaper-movie-film-cinema-drama-serial-tv-book-synopsis-vintage-cinema\ \(1\).jpg);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  filter: blur(10);
 }
 
 .container {
@@ -30,7 +31,7 @@ body {
 
 h1 {
     font-size: 36px;
-    color: #fff;
+    color: #fff;  
 }
 
 .input-container {

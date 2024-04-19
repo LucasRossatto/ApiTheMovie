@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link rel="stylesheet" href="/src/public/css/responsividade.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a0043d9bc2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>The Movies Home</title>
+  </head>
+  <body>
+    <nav>
+      <div id="navBtn">
+        <img src="../public/image/iconeMenu.png" alt="" />
+      </div>
+
+      <ul class="hide-on-mobile">
+        <li class="activePrincipal"><a href="telainicial.html">HOME</a></li>
+        <li class="activeSub"><a href="telafilmes.html">FILMES</a></li>
+        <li class="activeSub"><a href="telaseries.html">SÉRIES</a></li>
+        <li class="activeSub"><a href="minhalista.html">MINHA LISTA</a></li>
+      </ul>
+      
+
+      <div id="profileMenu" class="profile-menu">
+        <a href="naoencontrado.html">Configurações</a>
+        <a href="naoencontrado.html">Mudar Perfil</a>
+        <a href="naoencontrado.html">Acessar Plano</a>
+        <a href="index.html">Sair</a>
+      </div>
+
+      <img
+        id="profile"
+        src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-88wkdmjrorckekha.jpg"
+        alt=""
+      />
+    </nav>
+
+    <div class="wrapper">
+      <div class="slide-wrapper" data-slide="wrapper">
+        <button
+          class="slide-nav-button slide-nav-previous fas fa-chevron-left"
+          data-slide="nav-previous-button"
+        ></button>
+        <button
+          class="slide-nav-button slide-nav-next fas fa-chevron-right"
+          data-slide="nav-next-button"
+        ></button>
+        <div class="slide-list" data-slide="list">
+          <div class="slide-item" data-slide="item" data-index="0">
+            <div class="slide-content">
+              <img
+                class="slide-image"
+                src="../public/image/halo5.png"
+                alt="Assassin's Creed"
+              />
+              <div class="slide-description">
+                <h3>Assassin's Creed</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide-item" data-slide="item" data-index="1">
+            <div class="slide-content">
+              <img
+                class="slide-image"
+                src="../public/image/fortnite.png"
+                alt="Fortnite"
+              />
+              <div class="slide-description">
+                <h3>Fortnite</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide-item" data-slide="item" data-index="2">
+            <div class="slide-content">
+              <img
+                class="slide-image"
+                src="../public/image/freefire.png"
+                alt="Freefire"
+              />
+              <div class="slide-description">
+                <h3>Freefire</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide-item" data-slide="item" data-index="3">
+            <div class="slide-content">
+              <img
+                class="slide-image"
+                src="../public/image/gta-v.png"
+                alt="GTA V"
+              />
+              <div class="slide-description">
+                <h3>GTA V</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide-item" data-slide="item" data-index="4">
+            <div class="slide-content">
+              <img
+                class="slide-image"
+                src="../public/image/halo5.png"
+                alt="Halo 5"
+              />
+              <div class="slide-description">
+                <h3>Halo 5</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide-item" data-slide="item" data-index="5">
+            <div class="slide-content">
+              <img
+                class="slide-image"
+                src="../public/image/league-of-legends.png"
+                alt="League of Legends"
+              />
+              <div class="slide-description">
+                <h3>League of Legends</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide-item" data-slide="item" data-index="6">
+            <div class="slide-content">
+              <img
+                class="slide-image"
+                src="../public/image/red-dead-redemption-2.png"
+                alt="Red Dead Redemption 2"
+              />
+              <div class="slide-description">
+                <h3>Red Dead Redemption 2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide-item" data-slide="item" data-index="7">
+            <div class="slide-content">
+              <img
+                class="slide-image"
+                src="../public/image/zelda.png"
+                alt="Zelda"
+              />
+              <div class="slide-description">
+                <h3>Zelda</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide-controls" data-slide="controls-wrapper"></div>
+      </div>
+    </div>
+
+    <div class="populares">
+      <h1 style="color: white">Populares</h1>
+    </div>
+
+    <main id="container" class="container"></main>
+
+    <script src="/index.js"></script>
+    <script src="./slides.js"></script>
+    <script>
+      initSlider({
+        autoPlay: true,
+        startAtIndex: 0,
+        timeInterval: 2000,
+      });
+    </script>
+  </body>
+</html>

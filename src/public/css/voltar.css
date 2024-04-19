@@ -1,0 +1,21 @@
+a {
+    display: inline-block;
+    background-color: #9146ff;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px; /* Ajusta o alinhamento vertical do texto */
+    transition: all 0.5s;
+}
+a:hover  {
+    background-color: #6430b3;
+    transition: all 0.5s;
+}

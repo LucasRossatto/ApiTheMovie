@@ -152,7 +152,6 @@ nav li a {
     display: flex;
     align-items: center;
     height: 100%;
-    margin-bottom: 30px;
 }
 
 .slide-wrapper {
@@ -346,9 +345,14 @@ nav li a {
     font-weight: bold;
     padding: 0.3em 0.7em;
     font-size: 12px;
-    letter-spacing: -0.6px
+    letter-spacing: -0.6px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 2px;
+    background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);
   }
-  
+
   .project-hover {
     border-radius: 50%;
     width: 50px;

@@ -1,0 +1,220 @@
+@media screen and (max-width: 768px) {
+  nav ul.hide-on-mobile {
+    display: none;
+  }
+
+  nav ul.show-on-mobile {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    background-color: #0D1117;
+    position: absolute;
+    top: 100px; /* Ajuste conforme necessário */
+    left: 0;
+    width: 100%;
+  }
+
+  nav ul.show-on-mobile li {
+    padding: 8px;
+    text-align: left;
+    justify-content: left;
+  }
+
+  .container-project {
+    width: calc(50% - 20px); /* Ajusta para mostrar dois elementos por linha */
+    margin-bottom: 20px; /* Espaçamento entre os elementos */
+    height: calc(50vw - 20px); /* Define a altura proporcional à largura */
+  }
+
+  .container-project {
+    width: 100%; /* Ajustado para responsividade */
+    height: auto; /* Altura ajustada automaticamente com base no conteúdo */
+    background: black;
+  }
+  
+  .container-project img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .project-info {
+    padding-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  
+  .project-title {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: black;
+  }
+  
+  .flex-pr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .project-type {
+    background: #b2b2fd;
+    color: #1a41cd;
+    font-weight: bold;
+    padding: 0.3em 0.7em;
+    font-size: 12px;
+    letter-spacing: -0.6px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 2px;
+    background-color: rgba(165, 96, 247, 0.43);
+    color: rgb(85, 27, 177);
+  }
+  
+  .project-hover {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 9px;
+    transition: all 0.3s ease;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .article-wrapper {
+    width: 100%; /* Largura ajustada para responsividade */
+    transition: 0.15s all ease-in-out;
+    border-radius: 10px;
+    padding: 5px;
+    border: 4px solid transparent;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .types {
+    gap: 10px;
+    display: flex;
+    place-content: flex-start;
+  }
+  
+  .populares h1 {
+    margin-left: px;
+    font-size: 25px;
+  }
+  
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  .slide-nav-button {
+    display: none; /* Oculta todos os botões de navegação */
+  }
+
+  .slide-item {
+    width: 100vw; /* Define a largura total da tela para cada item do carrossel */
+  }
+
+  .slide-content {
+    padding: 0; /* Remove o preenchimento para ocupar melhor o espaço */
+  }
+
+  .slide-description {
+    padding: 10px; /* Adiciona um espaçamento interno para o conteúdo */
+  }
+
+  .slide-description h3 {
+    font-size: 24px; /* Reduz o tamanho do título */
+    top: 0; /* Remove o deslocamento para cima */
+  }
+
+  .slide-description p {
+    display: none; /* Oculta o texto de descrição no carrossel */
+  }
+
+  .slide-controls {
+    margin: 15px auto 0; /* Ajusta a margem do controle de navegação */
+  }
+
+  .slide-control-button {
+    font-size: 14px; /* Reduz o tamanho do texto dos botões de navegação */
+  }
+}
+
+/* Outros estilos para o carrossel */
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.slide-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide-list {
+  display: flex;
+}
+
+.slide-item {
+  cursor: grab;
+  flex-shrink: 0;
+  padding: 0 10px;
+  width: 90vw;
+}
+
+.slide-content {
+  border-radius: 10px;
+  border: 1px solid #fff;
+  box-shadow: #070707 0px 12px 12px;
+  position: relative;
+}
+
+.slide-image {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.slide-description {
+  border-radius: 10px;
+  background: linear-gradient(to top, #000, transparent);
+  color: #fff;
+  position: absolute;
+  padding: 30px;
+  bottom: 0;
+  width: 100%;
+}
+
+.slide-description h3 {
+  font-family: 'Koulen', sans-serif;
+  font-size: 48px;
+  position: relative;
+  top: 16px;
+}
+
+.slide-description p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 24px;
+}
+
+
+
+
+
+

@@ -2,6 +2,7 @@ const API_Key = "c7a928a11e9e543b65e5d2f7b9f56e60";
 const urlFilmes = `https://api.themoviedb.org/3/movie/popular?api_key=${API_Key}`;
 const container = document.getElementById("container");
 
+
 fetch(urlFilmes)
     .then(response => {
         if (!response.ok) {
@@ -9,10 +10,11 @@ fetch(urlFilmes)
         }
         return response.json();
     })
-    .then(data => cards(data.results)) // Corrigido para acessar data.results
+    .then(data => cards(data.results))
     .catch(error => console.error('Erro:', error));
  
 function cards(dataArray) {
+    
     dataArray.forEach(movie =>  {
         const card = document.createElement("article");
         card.className = "article-wrapper";
@@ -30,8 +32,9 @@ function cards(dataArray) {
                     </div>
                 </div>
                 <div class="types">
-                <span style="background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);" class="project-type"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/a560f7/star--v1.png" alt="star--v1"/>${movie.vote_average}</span>
-                <span class="project-type">•${movie.genres}</span>
+                <span  class="project-type"><img width="11" height="11" src="https://img.icons8.com/ios-glyphs/30/a560f7/star--v1.png" alt="star--v1"/>${movie.vote_average}</span>
+                <span class="project-type">${movie.release_date}</span>
+                
                 </div>
             </div>
         `;
@@ -40,5 +43,12 @@ function cards(dataArray) {
     });
 }
  
-
-
+document.addEventListener('DOMContentLoaded', function () {
+    const navBtn = document.getElementById('navBtn');
+    const navLinks = document.querySelector('nav ul');
+  
+    navBtn.addEventListener('click', function () {
+      navLinks.classList.toggle('show-on-mobile');
+    });
+  });
+  

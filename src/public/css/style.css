@@ -11,6 +11,8 @@
 :root {
     --azulEscuroBG: #0D1117;
     --RoxoBtn: #9146ff;
+    --RoxoTag: rgba(165, 96, 247, 0.43);
+    --RoxoLetra:rgb(85, 27, 177);
 }
 
 /*--------------------------------------------*/ 
@@ -350,7 +352,7 @@ nav li a {
     align-items: center;
     justify-items: center;
     gap: 2px;
-    background-color: rgba(165, 96, 247, 0.43); color: rgb(85, 27, 177);
+    background-color: var(--RoxoTag); color: var(--RoxoLetra) ;
   }
 
   .project-hover {
@@ -374,8 +376,7 @@ nav li a {
 
   .container {
     display: flex;
-    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha quando não couberem mais na largura */
-    justify-content: center; /* Centraliza os elementos horizontalmente */
+   /* justify-content: center; /* Centraliza os elementos horizontalmente */
     gap: 20px; /* Espaçamento entre os elementos */
     max-width: 100%; /* Garante que o container não ultrapasse a largura máxima da tela */
     margin: 0 auto; /* Centraliza o container na tela */
@@ -405,4 +406,5 @@ nav li a {
     margin-left: 75px ;
     padding: 25px;
     font-size: 25px;
+    color: #ffff;
 }

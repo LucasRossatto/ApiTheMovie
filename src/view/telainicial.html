@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../public/css/style.css" />
     <link rel="stylesheet" href="/src/public/css/responsividade.css">
+    <link rel="stylesheet" href="/src/public/css/carrosel.css ">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
@@ -65,12 +66,12 @@
             <div class="slide-content">
               <img
                 class="slide-image"
-                src="../public/image/halo5.png"
-                alt="Assassin's Creed"
+                src="../public/image/Guardians.png"
+                alt="Guardians"
               />
               <div class="slide-description">
-                <h3>Assassin's Creed</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                <h3>Guardioes da Galaxia</h3>
+                <p>um épico cósmico repleto de ação, humor e uma trilha sonora incrível que leva os espectadores a uma jornada intergaláctica emocionante.</p>
               </div>
             </div>
           </div>
@@ -78,12 +79,12 @@
             <div class="slide-content">
               <img
                 class="slide-image"
-                src="../public/image/fortnite.png"
-                alt="Fortnite"
+                src="../public/image/Spider.png"
+                alt="Spider"
               />
               <div class="slide-description">
-                <h3>Fortnite</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                <h3>Homem Aranha no Aranhaverso</h3>
+                <p>uma explosão de cores, emoção e originalidade que redefine o conceito de super-heróis ao explorar múltiplas versões do Homem-Aranha em universos paralelos.</p>
               </div>
             </div>
           </div>
@@ -91,11 +92,11 @@
             <div class="slide-content">
               <img
                 class="slide-image"
-                src="../public/image/freefire.png"
-                alt="Freefire"
+                src="../public/image/FiveNigthsAtFredides.png"
+                alt="FiveNigthsAtFredides"
               />
               <div class="slide-description">
-                <h3>Freefire</h3>
+                <h3>Five Nigths At Fredies</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
               </div>
             </div>
@@ -104,11 +105,11 @@
             <div class="slide-content">
               <img
                 class="slide-image"
-                src="../public/image/gta-v.png"
-                alt="GTA V"
+                src="../public/image/TheLastOffUs.png"
+                alt="TheLastOffUs"
               />
               <div class="slide-description">
-                <h3>GTA V</h3>
+                <h3>The Last off us</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
               </div>
             </div>
@@ -117,7 +118,7 @@
             <div class="slide-content">
               <img
                 class="slide-image"
-                src="../public/image/halo5.png"
+                src="../public/image/Halo.png"
                 alt="Halo 5"
               />
               <div class="slide-description">
@@ -130,11 +131,11 @@
             <div class="slide-content">
               <img
                 class="slide-image"
-                src="../public/image/league-of-legends.png"
-                alt="League of Legends"
+                src="../public/image/fallout.png"
+                alt="Fallout"
               />
               <div class="slide-description">
-                <h3>League of Legends</h3>
+                <h3>Fallout</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
               </div>
             </div>
@@ -143,11 +144,11 @@
             <div class="slide-content">
               <img
                 class="slide-image"
-                src="../public/image/red-dead-redemption-2.png"
-                alt="Red Dead Redemption 2"
+                src="../public/image/oppenheimer.png"
+                alt="Oppenheimer"
               />
               <div class="slide-description">
-                <h3>Red Dead Redemption 2</h3>
+                <h3>Oppenheimer</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
               </div>
             </div>
@@ -156,11 +157,11 @@
             <div class="slide-content">
               <img
                 class="slide-image"
-                src="../public/image/zelda.png"
-                alt="Zelda"
+                src="../public/image/batman.png"
+                alt="batman"
               />
               <div class="slide-description">
-                <h3>Zelda</h3>
+                <h3>batman</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
               </div>
             </div>
@@ -169,12 +170,28 @@
         <div class="slide-controls" data-slide="controls-wrapper"></div>
       </div>
     </div>
+    
+    <div class="populares">
+      <h1>Filmes Populares</h1>
+    </div>
+    
+    <main id="container" class="container carousel"></main>
 
     <div class="populares">
-      <h1 style="color: white">Populares</h1>
+      <h1>Filmes Mais Assistidos</h1>
     </div>
+    <main id="container2" class="container carousel"></main>
+    <div class="populares">
+      <h1>Series Populares </h1>
+    </div>
+    <main id="container3" class="container"></main>
+    <div class="populares">
+      <h1>Series Mais Assistidas </h1>
+    </div>
+    <main id="container4" class="container"></main>
+    
 
-    <main id="container" class="container"></main>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
     <script src="/index.js"></script>
     <script src="./slides.js"></script>
@@ -182,7 +199,7 @@
       initSlider({
         autoPlay: true,
         startAtIndex: 0,
-        timeInterval: 2000,
+        timeInterval: 5000,
       });
     </script>
   </body>

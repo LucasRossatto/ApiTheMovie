@@ -261,6 +261,7 @@ nav li a {
     .slide-nav-button {
         margin-top: -20px;
         font-size: 28px;
+        border: none;
     }
     
     .slide-nav-previous {
@@ -376,12 +377,41 @@ nav li a {
 
   .container {
     display: flex;
+    overflow: auto;
    /* justify-content: center; /* Centraliza os elementos horizontalmente */
     gap: 20px; /* Espaçamento entre os elementos */
     max-width: 100%; /* Garante que o container não ultrapasse a largura máxima da tela */
     margin: 0 auto; /* Centraliza o container na tela */
     padding: 0 20px; /* Adiciona um espaçamento interno para evitar que os elementos encostem nas bordas */
 }
+    /* Estiliza a barra de rolagem */
+/* Estiliza a barra de rolagem */
+::-webkit-scrollbar {
+    height: 6px; /* Define a altura da barra de rolagem horizontal */
+    width: 10px; /* Largura da barra de rolagem vertical */
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--azulEscuroBG);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: var(--RoxoBtn);
+    border-radius: 5px;
+    scrollbar-width: 10%;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #ffff;
+    border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+
 
 /* Estilos para cada elemento do container (por exemplo, .article-wrapper) podem ser ajustados conforme necessário */
 .article-wrapper {
@@ -402,8 +432,8 @@ nav li a {
     place-content: flex-start;
   }
 
-.populares h1{
-    margin-left: 75px ;
+.destaques h1{
+    margin-left: 1px ;
     padding: 25px;
     font-size: 25px;
     color: #ffff;

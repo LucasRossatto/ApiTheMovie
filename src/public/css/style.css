@@ -206,6 +206,7 @@ nav li a {
 
 .slide-description p {
     font-family: 'PT Sans', sans-serif;
+    text-align: left;
     font-size: 24px;
 }
 
@@ -409,6 +410,10 @@ nav li a {
 
 ::-webkit-scrollbar-corner {
     background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+    cursor: pointer;
 }
 
 

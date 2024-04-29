@@ -10,7 +10,7 @@
 }
 
 body {
-  background-image: url(./src/public/image/desktop-wallpaper-movie-film-cinema-drama-serial-tv-book-synopsis-vintage-cinema\ \(1\).jpg);
+  background-image: url(/src/public/image/desktop-wallpaper-movie-film-cinema-drama-serial-tv-book-synopsis-vintage-cinema\ \(1\).jpg);
   background-size: cover;
   background-position: center;
   min-height: 100vh;

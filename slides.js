@@ -9,6 +9,7 @@ let slideItems = document.querySelectorAll('[data-slide="item"]')
 let controlButtons
 let slideInterval
 
+
 const state = {
     startingPoint: 0,
     savedPosition: 0,

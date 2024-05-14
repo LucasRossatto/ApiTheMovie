@@ -16,4 +16,4 @@ Esse projeto utiliza a API The Movie DB, com uma interface iterativa e moderna, 
  
 ---
  
-### Feito com ❤️ por [Thiago Rodrigues](https://github.com/thiagosoftware), [Lucas Rossatto](https://github.com/lucasrossatto) e [Lucas Santos](https://github.com/lucassdolv)
+### Feito por [Thiago Rodrigues](https://github.com/thiagosoftware), [Lucas Rossatto](https://github.com/lucasrossatto) e [Lucas Santos](https://github.com/lucassdolv)

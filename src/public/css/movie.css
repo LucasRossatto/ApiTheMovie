@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+    --azulEscuroBG: #0D1117;
+    --RoxoBtn: #9146ff;
+    --RoxoTag: rgba(165, 96, 247, 0.43);
+    --RoxoLetra:rgb(85, 27, 177);
+}
+
+
+body{
+    background-color: #0D1117;
+}
+
+
+
+
+nav {
+  background-color: black;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+#navBtn img {
+  width: 42px;
+  cursor: pointer;
+
+}
+
+nav ul {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 23px;
+  gap: 15px;
+  transition: color 0.3s ease;
+  
+}
+
+
+
+
+.activeSub {
+  position: relative;
+}
+
+.activeSub a {
+  display: inline-block;
+  position: relative;
+}
+
+.activeSub::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--RoxoBtn);
+  transition: width 0.3s ease;
+}
+
+.activeSub:hover::before {
+  width: 100%;
+}*
+
+#profile {
+  width: 48px; /* Define a largura igual à altura */
+  height: 48px;
+  border-radius: 50%; /* Torna a imagem redonda */
+}
+
+#profile:hover {
+  cursor: pointer;
+}
+
+/* Estilos para o menu de perfil */
+.profile-menu {
+  display: none;
+  position: absolute;
+  top: 60px; /* Ajuste a posição conforme necessário */
+  right: 10px; /* Ajuste a posição conforme necessário */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+
+}
+
+.profile-menu a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+  transition: 0.4s;
+
+}
+
+.profile-menu a:hover {
+  background-color: #f0f0f0;
+  color: var(--RoxoBtn);
+  transition: 0.4s;
+}
+
+
+
+.align-movie{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.backdrop-Container{
+  background-color: #abcdff;
+  width: 100%;
+  height: 300px;
+}
+
+
+
+
+/*Card*/
+
+.project-info {
+    padding-top: 20px;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: white;
+  }
+  
+  .project-title {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 600;
+   /* depend de la font */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: black;
+  }
+  
+  .flex-pr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .project-type {
+    background: #b2b2fd;
+    color: #1a41cd;
+    font-weight: bold;
+    padding: 0.3em 0.7em;
+    font-size: 12px;
+    letter-spacing: -0.6px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 2px;
+    background-color: var(--RoxoTag); color: var(--RoxoLetra) ;
+  }
+
+  .project-hover {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 9px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .container-project {
+    width: 207px;
+    height: 280px;
+    background: black;
+  }
+  .container-project img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .container {
+    display: flex;
+    overflow: auto;
+   /* justify-content: center; /* Centraliza os elementos horizontalmente */
+    gap: 20px; /* Espaçamento entre os elementos */
+    max-width: 100%; /* Garante que o container não ultrapasse a largura máxima da tela */
+    margin: 0 auto; /* Centraliza o container na tela */
+    padding: 0 20px; /* Adiciona um espaçamento interno para evitar que os elementos encostem nas bordas */
+}

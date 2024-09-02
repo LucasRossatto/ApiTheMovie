@@ -67,18 +67,18 @@ const createCard = (item) => {
 
 const fetchDataAndDisplayInContainers = async () => {
   const urls = [
-    `${Main_url}/movie/popular?api_key=${API_Key}`,
-    `${Main_url}/movie/top_rated?api_key=${API_Key}`,
-    `${Main_url}/tv/popular?api_key=${API_Key}`,
-    `${Main_url}/tv/top_rated?api_key=${API_Key}`,
-    `${Main_url}/genre/27/movies?api_key=${API_Key}`,
-    `${Main_url}/genre/28/movies?api_key=${API_Key}`,
-    `${Main_url}/genre/35/movies?api_key=${API_Key}`,
-    `${Main_url}/genre/10749/movies?api_key=${API_Key}`,
-    `${Main_url}/discover/tv?api_key=${API_Key}&with_genres=16`,
-    `${Main_url}/discover/tv?api_key=${API_Key}&with_genres=10759`,
-    `${Main_url}/discover/tv?api_key=${API_Key}&with_genres=35`,
-    `${Main_url}/discover/tv?api_key=${API_Key}&with_genres=18`,
+    `${Main_url}/movie/popular?api_key=${API_Key}&language=pt-BR`,
+    `${Main_url}/movie/top_rated?api_key=${API_Key}&language=pt-BR`,
+    `${Main_url}/tv/popular?api_key=${API_Key}&language=pt-BR`,
+    `${Main_url}/tv/top_rated?api_key=${API_Key}&language=pt-BR`,
+    `${Main_url}/genre/27/movies?api_key=${API_Key}&language=pt-BR`,
+    `${Main_url}/genre/28/movies?api_key=${API_Key}&language=pt-BR`,
+    `${Main_url}/genre/35/movies?api_key=${API_Key}&language=pt-BR`,
+    `${Main_url}/genre/10749/movies?api_key=${API_Key}&language=pt-BR`,
+    `${Main_url}/discover/tv?api_key=${API_Key}&with_genres=16&language=pt-BR`,
+    `${Main_url}/discover/tv?api_key=${API_Key}&with_genres=10759&language=pt-BR`,
+    `${Main_url}/discover/tv?api_key=${API_Key}&with_genres=35&language=pt-BR`,
+    `${Main_url}/discover/tv?api_key=${API_Key}&with_genres=18&language=pt-BR`,
   ];
 
   for (let i = 0; i < urls.length; i++) {

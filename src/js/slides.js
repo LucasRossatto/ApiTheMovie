@@ -1,4 +1,3 @@
-'use strict'
 
 const slideWrapper = document.querySelector('[data-slide="wrapper"]') 
 const slideList = document.querySelector('[data-slide="list"]') 
@@ -240,5 +239,3 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-
-
